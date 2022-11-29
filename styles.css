@@ -1,4 +1,4 @@
-/* Generycs */
+/* GENERICS */
 body{
     font-family: sans-serif;
 }
@@ -15,27 +15,23 @@ footer{
     min-height: 300px;
     background-color: lightblue;
 }
-img{
-    max-width: 100%;
-}
+
 /* Utility */
 main [class="col"]{
     /* background-color: purple; */
     min-height: 50px;
-    border: 2px dashed fuchsia;
+    /* border: 2px dashed fuchsia; */
 }
 
-main [class^="col-"]{
-    /* min-height: 100px; */
-    /* background-color: orangered; */
-    /* border: 2px dashed orangered; */
+.row{
+    /* border: 3px solid dodgerblue; */
 }
-
+.select{
+    border-bottom: 2px solid rgb(0,114,206);
+}
 .bg-orange{
     background-color: rgb(205,61,15);
-}
-.row{
-    border: 3px solid dodgerblue;
+    color: white;
 }
 
 /** header */
@@ -47,40 +43,53 @@ main [class^="col-"]{
     vertical-align: middle;
 }
 .sony img{
-    width: 80px;
+    width: 100px;
 }
-.btn{
-    border-radius: 40px;
+
+/* jumbotron */
+.jumbotron{
+    /* border: 2px dashed blue; */
+
+    color: white;
+
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.jumbotron h2{
+    margin: 30px 0;
+}
+#jumbotron-top{
+    background-image: url(img/jumbo-bg.png);
+    padding-top: 200px;
+}
+#jumbotron-bottom{
+    background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
+    padding: 50px 0;
 }
 
 /* main */
-#jumbotron{
-    border: 2px dashed blue;
-}
-.evidence .col-12{
-    background-image: url(img/jumbo-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;
-    position: relative;
-}
-.evidence img{
-    width: 50%;
-}
-.evidence .col-11{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
 .related img {
-    margin-bottom: 1.5rem;
     border-radius: 20px;
     padding: 3px;
 }
-.related .col:first-child img{
+#related-top .col:first-child img{
     border: 2px solid rgb(0,114,206);
 }
-.select{
-    border-bottom: 2px solid rgb(0,114,206);
+#related-bottom{
+    background-color: rgb(31,31,31);
+    color: white;
+    
+    padding: 20px 0;
+}
+
+
+/**** RESPONSIVE ****/
+@media screen and (min-width:768px){
+    #ps5 .col> img{
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+   } 
 }
