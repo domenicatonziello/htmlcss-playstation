@@ -95,11 +95,16 @@ section{
     
     padding: 20px 0;
 }
+/* ps5 */
+#ps5 .opacity{
+    filter: opacity(75%);
+}
 /* ps4 */
 #ps4 .row > .col{
     margin-bottom: 1rem;
 }
 /* ps+ */
+
 #ps-plus{
     background-color: rgb(190,188,187);
 }
@@ -128,6 +133,11 @@ section{
 }
 #related-top .col:hover{
     transform: translatey(-10px);
+}
+#ps5 .opacity:hover{
+    cursor: pointer;
+    filter:opacity(1);
+    border-bottom: 2px solid rgb(0,114,206); ;
 }
 
 /**** RESPONSIVE ****/
