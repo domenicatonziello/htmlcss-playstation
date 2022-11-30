@@ -83,6 +83,9 @@ section{
     border-radius: 20px;
     padding: 3px;
 }
+#related-top .col{
+    transition: transform 1s;
+}
 #related-top .col:first-child img{
     border: 2px solid rgb(0,114,206);
 }
@@ -123,7 +126,9 @@ section{
 .my-btn:hover {
     box-shadow: inset 0 0 0 2px;
 }
-
+#related-top .col:hover{
+    transform: translatey(-10px);
+}
 
 /**** RESPONSIVE ****/
 @media screen and (min-width:768px){
